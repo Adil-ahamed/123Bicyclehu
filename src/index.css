@@ -176,7 +176,7 @@ body {
 .swiper-wrapper {
   display: flex;
   width: fit-content;
-  animation: scroll-left 20s linear infinite; /* The keyframe animation */
+  animation: scroll-left 7s linear infinite; /* The keyframe animation */
 }
 
 /* Optional: pause the animation when the user hovers over the swiper */
@@ -187,8 +187,8 @@ body {
 .swiper-item {
   display: flex; /* Make the content a flex container */
   align-items: center; /* Vertically center the items */
-  gap: 15px; /* Add some space between the image and the text */
-  padding: 0 40px;
+  gap: 5px; /* Add some space between the image and the text */
+  padding: 0 20px;
   white-space: nowrap;
   color: white;
   font-weight: bold;
