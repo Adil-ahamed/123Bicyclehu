@@ -6,19 +6,17 @@ import {
   Container,
   Grid,
   Stack,
-  IconButton,
 } from "@mui/material";
 
-import { Icon } from "@iconify/react";
 
 function HeroAbout() {
   return (
     <>
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" sx={{ m: { xs: 0, sm: "auto" },p: { xs: 0, sm: "auto" } }}>
         <Box
           sx={{
             backgroundImage: {
-              xs: "url(/images/hero-bg-2.JPG)", // mobile
+              xs: "url(/images/about-bg-2.JPG)", // mobile
               sm: "url(/images/hero-bg.png)", // tablet & up
             },
             backgroundPosition: "center",

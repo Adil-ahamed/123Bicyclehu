@@ -131,14 +131,14 @@ function DriveUs() {
 
           {/* Right Image Section */}
           <Grid size={{ xs: 12, sm: 12, md: 4 }}>
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.9 }}
               viewport={{ once: true, amount: 0.3 }}
-            >
+            > */}
               <img loading="lazy"  src="/images/wide-1.png" width={"100%"} />
-            </motion.div>
+            {/* </motion.div> */}
           </Grid>
         </Grid>
       </Container>

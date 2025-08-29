@@ -185,10 +185,10 @@ function WideRange() {
                   <img loading="lazy"  src="/images/wide-1.png" width="100%" alt="Cycle 1" />
                 </Box>
                 <Box>
-                  <img loading="lazy"  src="/images/wide-2.png" width="100%" alt="Cycle 2" />
+                  <img loading="lazy"  src="/images/wide-2.JPG" width="100%" alt="Cycle 2" />
                 </Box>
                 <Box>
-                  <img loading="lazy"  src="/images/wide-3.png" width="100%" alt="Cycle 3" />
+                  <img loading="lazy"  src="/images/wide-3.JPG" width="100%" alt="Cycle 3" />
                 </Box>
               </Slider>
             </motion.div>

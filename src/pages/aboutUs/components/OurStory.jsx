@@ -27,10 +27,10 @@ function OurStory() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-              viewport={{ once: true, amount: 0.3 }}
+              // initial={{ opacity: 0, y: 50 }}
+              // whileInView={{ opacity: 1, y: 0 }}
+              // transition={{ duration: 1 }}
+              // viewport={{ once: true, amount: 0.3 }}
             >
               <Box sx={{ mt: { xs: 2, sm: 4, md: 8 } }}>
                 <img loading="lazy"  src="/images/about-1.png" style={{ width: "100%" }} />
@@ -41,7 +41,7 @@ function OurStory() {
           {/* Right Section */}
           <Grid size={{ xs: 12, sm: 8, md: 8 }}>
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0, x: -50, }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.9 }}
               viewport={{ once: true, amount: 0.3 }}
