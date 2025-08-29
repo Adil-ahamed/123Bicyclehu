@@ -58,8 +58,8 @@ function MoreThanCycle() {
           <Grid size={{ xs: 12, sm: 6, md: 5 }}>
             <motion.div variants={fadeUp}>
               <Box
-                py={{ xs: 1, sm: 2, md: 4 }}
-                px={{ xs: 1, sm: 4, md: 8 }}
+                py={{ xs: 2, sm: 3, md: 4 }}
+                px={{ xs: 2, sm: 5, md: 8 }}
                 className="dark-bg"
               >
                 <motion.img
@@ -91,7 +91,7 @@ function MoreThanCycle() {
           {/* Accessories */}
           <Grid size={{ xs: 12, sm: 6, md: 3.5 }}>
             <motion.div variants={fadeUp}>
-              <Box py={0} px={{ xs: 1, sm: 2, md: 4 }}>
+              <Box py={0}  px={{ xs: 2, sm: 5, md: 8 }}>
                 <motion.img
                   src="/images/jus-shop-1.png"
                   width={"100%"}
@@ -117,7 +117,7 @@ function MoreThanCycle() {
           {/* Community */}
           <Grid size={{ xs: 12, sm: 6, md: 3.5 }}>
             <motion.div variants={fadeUp}>
-              <Box py={0} px={{ xs: 1, sm: 2, md: 4 }}>
+              <Box py={0}  px={{ xs: 2, sm: 5, md: 8 }}>
                 <motion.img
                   src="/images/about-2.png"
                   width={"100%"}

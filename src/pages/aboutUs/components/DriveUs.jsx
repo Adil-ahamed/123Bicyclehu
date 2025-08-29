@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function DriveUs() {
   return (
-    <Box py={{ xs: 2, sm: 3, md: 5 }} className="dark-bg">
+    <Box  py={{ xs:4 , sm: 6, md: 8 }} className="dark-bg">
       <Container maxWidth="lg">
         <Grid container spacing={2} alignItems={"center"}>
           {/* Left Text Section */}

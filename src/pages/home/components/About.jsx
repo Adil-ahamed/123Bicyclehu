@@ -25,7 +25,7 @@ function About() {
           container
           spacing={2}
           px={1}
-          py={{ xs: 2, sm: 4, md: 10 }}
+          py={{ xs:4 , sm: 6, md: 10 }}
           component={motion.div}
           variants={staggerContainer}
           initial="hidden"
