@@ -26,6 +26,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Sora", sans-serif !important;
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+}
+*::-webkit-scrollbar {
+  display: none; 
 }
 .logo-txt{
   font-family: "base02", sans-serif !important;
