@@ -40,8 +40,9 @@ function Address() {
             alignItems="center"
           >
             {[
-              { label: "Address", value: "123 Cycle Street, Tirur, 676101" },
-              { label: "Phone", value: "+91 1234567890" },
+              { label: "Address", value: "123 BICYCLE HUB, MARS TOWER, ALATHIYUR, 676102 " },
+              { label: "Phone", value: "+91 7994664789" },
+              { label: "", value: "+91 7034701667" },
               { label: "Email", value: "yaseen@gmail.com" },
               {
                 label: "Store Hours",

@@ -5,18 +5,21 @@ import { motion } from "framer-motion";
 const testimonials = [
   {
     quote: "The service is top-notch and the staff truly know bikes.",
-    name: "Aarav Nair",
+    name: "Mohammed Harshal",
     location: "Malappuram",
+    avatar: "/images/avatar (1).jpeg",
   },
   {
     quote: "Love the vibe and the bikes are awesome. Highly recommended.",
-    name: "Rohan D",
+    name: "Aneez",
     location: "Calicut",
+    avatar: "/images/avatar (2).jpeg",
   },
   {
     quote: "Great community rides and amazing staff support every time.",
-    name: "Sneha Kumar",
-    location: "Kochi",
+    name: "Shamseer",
+    location: "Malappuram",
+    avatar: "/images/avatar (3).jpeg",
   },
 ];
 
@@ -74,7 +77,8 @@ function Testimonials() {
             </Typography>
 
             <Box>
-              <img loading="lazy" 
+              <img
+                loading="lazy"
                 src="/images/wide-1.png"
                 width="100%"
                 height={250}
@@ -112,14 +116,20 @@ function Testimonials() {
                         sx={{
                           width: 48,
                           height: 48,
-                          bgcolor: "grey.700",
+
                           borderRadius: "50%",
                         }}
-                      />
+                      >
+                        <img
+                          width={"100%"}
+                          style={{ borderRadius: "50%" }}
+                          src={t.avatar}
+                        />
+                      </Box>
                       <Box>
-                        <Typography variant="h6">{t.name}</Typography>
+                        <Typography variant="subtitle2">{t.name}</Typography>
                         <Typography
-                          variant="body1"
+                          variant="body2"
                           fontWeight={300}
                           className="gray-txt"
                         >

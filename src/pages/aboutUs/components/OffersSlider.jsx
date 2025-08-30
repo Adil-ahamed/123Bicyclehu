@@ -18,7 +18,7 @@ export default function WhatWeOffer() {
   const nextRef = useRef(null);
 
   return (
-    <Box py={{ xs: 2, sm: 3, md: 5 }} className="gray-bg">
+    <Box py={{ xs: 4, sm: 6, md: 8 }} className="gray-bg">
       <Container maxWidth="lg">
         <Box mb={{ xs: 3, sm: 4, md: 8 }}>
           <Typography
