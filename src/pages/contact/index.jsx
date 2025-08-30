@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import ContactHero from "./components/ContactHero";
 import Header from "../../layout/Header";
@@ -7,6 +7,10 @@ import Address from "./components/Address";
 import ContactFrom from "./components/ContactFrom";
 
 function Index() {
+  
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <>
       <Header />
