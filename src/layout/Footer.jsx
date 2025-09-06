@@ -108,7 +108,7 @@ function Footer() {
             </Grid>
             <Grid size={{ xs: 12 }} mb={1} textAlign={"center"}>
               <Typography variant="body2" fontWeight={100}>
-                2025 123 Cycle Hub. All Right Reserved
+                2025 123 Bicycle Hub. All Right Reserved
               </Typography>
             </Grid>
           </Grid>

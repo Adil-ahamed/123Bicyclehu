@@ -53,7 +53,7 @@ function HeroAbout() {
                 sx={{ fontSize: { xs: 16, sm: 16, md: 24 } }}
                 className="manrope-txt-family"
               >
-                Discover how 123 Cycle Hub Started and why we’re passionate
+                Discover how 123 Bicycle Hub Started and why we’re passionate
                 about every ride.
               </Typography>
               <Stack mt={3} direction="row" gap={2}>
