@@ -28,7 +28,10 @@ const staggerContainer = {
 function Hero() {
   return (
     <>
-      <Container maxWidth="lg" sx={{ m: { xs: 0, sm: "auto" },p: { xs: 0, sm: "auto" } }}>
+      <Container
+        maxWidth="lg"
+        sx={{ m: { xs: 0, sm: "auto" }, p: { xs: 0, sm: "auto" } }}
+      >
         <Box
           sx={{
             backgroundImage: {
@@ -98,17 +101,21 @@ function Hero() {
                 <motion.button
                   className="btn-contact"
                   variants={fadeUp}
+                  whileHover={{ scale: 1 }}
+                  whileTap={{ scale: 0.1 }}
+                >
+                  Contact Us
+                </motion.button>
+                <motion.button
+                  className="btn-contact"
+                  variants={fadeUp}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
                   WhatsApp Us
                 </motion.button>
 
-                {[
-                  "fa7-brands:instagram",
-                  "fa7-brands:x-twitter",
-                  "fa7-brands:facebook-f",
-                ].map((icon, idx) => (
+                {["fa7-brands:instagram"].map((icon, idx) => (
                   <motion.div
                     key={idx}
                     variants={fadeUp}
@@ -120,6 +127,7 @@ function Hero() {
                     </IconButton>
                   </motion.div>
                 ))}
+                
               </Stack>
             </Grid>
           </Grid>
