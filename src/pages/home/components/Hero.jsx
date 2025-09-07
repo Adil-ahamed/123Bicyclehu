@@ -98,23 +98,33 @@ function Hero() {
                 component={motion.div}
                 variants={staggerContainer}
               >
-                <motion.button
+                {/* 📞 Contact Us -> Telephone link */}
+                <motion.a
+                  href="tel:+917994664789"
                   className="btn-contact"
                   variants={fadeUp}
                   whileHover={{ scale: 1 }}
-                  whileTap={{ scale: 0.1 }}
+                  whileTap={{ scale: 0.95 }}
+                  style={{ textDecoration: "none" }}
                 >
                   Contact Us
-                </motion.button>
-                <motion.button
+                </motion.a>
+
+                {/* 💬 WhatsApp link */}
+                <motion.a
+                  href="https://wa.me/917994664789"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn-contact"
                   variants={fadeUp}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  style={{ textDecoration: "none" }}
                 >
                   WhatsApp Us
-                </motion.button>
+                </motion.a>
 
+                {/* Instagram */}
                 {["fa7-brands:instagram"].map((icon, idx) => (
                   <motion.div
                     key={idx}
@@ -127,7 +137,6 @@ function Hero() {
                     </IconButton>
                   </motion.div>
                 ))}
-                
               </Stack>
             </Grid>
           </Grid>

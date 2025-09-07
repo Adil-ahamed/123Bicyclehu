@@ -20,7 +20,7 @@ function SwiperSection() {
           style={{
             display: "flex",
             overflow: "hidden",
-            gap: "24px", // space between items
+            gap: "24px",
           }}
         >
           <div className="swiper-wrapper" style={{ display: "flex" }}>
@@ -32,24 +32,21 @@ function SwiperSection() {
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  minWidth: "200px", // controls item width
+                  justifyContent: "center",
+                  minWidth: "120px",
                 }}
               >
-                {/* ⭐ Star */}
-
-                {/* Brand Logo */}
-                <img loading="lazy" 
+                <Box
+                  component="img"
+                  loading="lazy"
                   src={item.img}
                   alt={item.label}
-                  style={{
-                    width: "100%",
-                    height: "auto",
+                  sx={{
+                    width: { xs: "90px", sm: "110px", md: "150px" }, // responsive width
+                    height: { xs: "50px", sm: "65px", md: "80px" }, // responsive height
                     objectFit: "contain",
-                    marginRight: "8px",
                   }}
                 />
-
-                {/* Label */}
               </div>
             ))}
 
@@ -61,26 +58,19 @@ function SwiperSection() {
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  minWidth: "200px",
+                  justifyContent: "center",
+                  minWidth: "120px",
                 }}
               >
-                {/* <img loading="lazy" 
-                  src="/images/swiper-star.png"
-                  alt="star"
-                  style={{
-                    width: "28px",
-                    height: '"28px"',
-                    marginRight: "8px",
-                  }}
-                /> */}
-                <img loading="lazy" 
+                <Box
+                  component="img"
+                  loading="lazy"
                   src={item.img}
                   alt={item.label}
-                  style={{
-                    width: "100%",
-                    height: "auto",
+                  sx={{
+                    width: { xs: "90px", sm: "110px", md: "150px" },
+                    height: { xs: "50px", sm: "65px", md: "80px" },
                     objectFit: "contain",
-                    marginRight: "8px",
                   }}
                 />
               </div>

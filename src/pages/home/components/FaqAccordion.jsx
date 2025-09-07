@@ -30,7 +30,7 @@ export default function FaqAccordion() {
   ];
 
   return (
-    <Box sx={{ p: { xs: 1, sm: 2,md:4 } }}>
+    <Box sx={{ p: { xs: 1, sm: 2, md: 4 } }}>
       {faqData.map((faq, index) => (
         <Accordion
           key={index}
@@ -59,7 +59,7 @@ export default function FaqAccordion() {
               "& .MuiAccordionSummary-content": {
                 margin: 0,
               },
-              minHeight: 76,
+              minHeight: { xs: 56, sm: 60, md: 76 },
             }}
           >
             <Typography
@@ -68,11 +68,11 @@ export default function FaqAccordion() {
                 fontWeight: 500,
                 // fontSize: "1.125rem",
                 letterSpacing: "0.01em",
-                 fontSize: {
-                    xs: "0.9rem",
-                    sm: "1.1rem",
-                    md: "1.5rem",
-                  },
+                fontSize: {
+                  xs: "0.9rem",
+                  sm: "1.1rem",
+                  md: "1.5rem",
+                },
               }}
             >
               {faq.question}
@@ -80,16 +80,16 @@ export default function FaqAccordion() {
           </AccordionSummary>
           <AccordionDetails sx={{ paddingX: 0, paddingTop: 0, pb: 2 }}>
             <Typography
-            // className="gray-txt"
+              // className="gray-txt"
               variant="h6"
               fontWeight={100}
               sx={{
                 lineHeight: 1.6,
-                 fontSize: {
-                    xs: "0.8rem",
-                    sm: "1rem",
-                    md: "1.3rem",
-                  },
+                fontSize: {
+                  xs: "0.8rem",
+                  sm: "1rem",
+                  md: "1.3rem",
+                },
               }}
             >
               {faq.answer}

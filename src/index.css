@@ -104,6 +104,7 @@ body {
   border: 2px solid #1c1c1c;
   box-shadow: 5px 5px 0px #282828;
   border-radius: 34px;
+  color: #000000;
 }
 
 .btn-contact:hover {
