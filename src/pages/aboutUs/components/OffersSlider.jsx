@@ -1,9 +1,8 @@
 import React from "react";
-import Slider from "react-slick";
+import { useKeenSlider } from "keen-slider/react";
 import { Box, Container, IconButton, Typography } from "@mui/material";
 import { Icon } from "@iconify/react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "keen-slider/keen-slider.min.css";
 
 const offers = [
   { title: "Sales", img: "/images/about-2.png" },
@@ -13,21 +12,25 @@ const offers = [
 ];
 
 export default function WhatWeOffer() {
-  const sliderRef = React.useRef(null);
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: false, // ❌ disable default arrows
-    swipe: false, // ✅ disable dragging/swiping
-    responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 768, settings: { slidesToShow: 1 } },
-    ],
-  };
+  const [sliderRef, instanceRef] = useKeenSlider({
+    loop: true,
+    mode: "snap",
+    slides: {
+      perView: 3,
+      spacing: 16,
+    },
+    breakpoints: {
+      "(max-width: 1200px)": {
+        slides: { perView: 3, spacing: 16 },
+      },
+      "(max-width: 992px)": {
+        slides: { perView: 2, spacing: 12 },
+      },
+      "(max-width: 600px)": {
+        slides: { perView: 1, spacing: 8 },
+      },
+    },
+  });
 
   return (
     <Box py={{ xs: 4, sm: 6, md: 8 }} className="gray-bg">
@@ -45,38 +48,40 @@ export default function WhatWeOffer() {
           </Typography>
         </Box>
 
-        {/* Slick Slider */}
-        <Slider ref={sliderRef} {...settings}>
+        {/* Keen Slider */}
+        <div ref={sliderRef} className="keen-slider">
           {offers.map((offer, index) => (
-            <Box key={index} px={2}>
-              <div className="offer-card">
-                <img
-                  loading="lazy"
-                  src={offer.img}
-                  alt={offer.title}
-                  className="offer-image"
-                />
-                <div className="offer-overlay">
-                  <h3 className="offer-text">{offer.title}</h3>
+            <div key={index} className="keen-slider__slide">
+              <Box px={2}>
+                <div className="offer-card">
+                  <img
+                    loading="lazy"
+                    src={offer.img}
+                    alt={offer.title}
+                    className="offer-image"
+                  />
+                  <div className="offer-overlay">
+                    <h3 className="offer-text">{offer.title}</h3>
+                  </div>
                 </div>
-              </div>
-            </Box>
+              </Box>
+            </div>
           ))}
-        </Slider>
+        </div>
 
-        {/* Custom Navigation Buttons - below slider, centered */}
+        {/* Custom Navigation */}
         <Box mt={3} display="flex" justifyContent="center" gap={2}>
           <IconButton
             className="slider-btn"
             aria-label="Previous"
-            onClick={() => sliderRef.current.slickPrev()}
+            onClick={() => instanceRef.current?.prev()}
           >
             <Icon icon="material-symbols:arrow-left-alt" style={{ color: "black" }} />
           </IconButton>
           <IconButton
             className="slider-btn"
             aria-label="Next"
-            onClick={() => sliderRef.current.slickNext()}
+            onClick={() => instanceRef.current?.next()}
           >
             <Icon icon="material-symbols:arrow-right-alt" style={{ color: "black" }} />
           </IconButton>
