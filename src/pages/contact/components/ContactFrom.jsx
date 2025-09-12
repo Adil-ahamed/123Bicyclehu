@@ -55,7 +55,7 @@ function ContactFrom() {
             required
             fullWidth
             type="email"
-            value={data.name}
+            value={data.email}
             onChange={(e) => setData({ ...data, email: e.target.value })}
             variant="outlined"
             sx={{
@@ -90,7 +90,7 @@ function ContactFrom() {
             required
             fullWidth
             type="text"
-            value={data.name}
+            value={data.message}
             onChange={(e) => setData({ ...data, message: e.target.value })}
             variant="outlined"
             sx={{

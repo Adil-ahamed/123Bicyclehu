@@ -46,7 +46,7 @@ function Address() {
               { label: "Email", value: "123bicyclehub@gmail.com" },
               {
                 label: "Store Hours",
-                value: "Mon-Sat : 9am - 8pm\nSunday : 10am - 4pm",
+                value: "Mon-Sat : 10am - 9pm\nSunday : 9am - 8pm",
               },
             ].map((item, index) => (
               <React.Fragment key={item.label}>

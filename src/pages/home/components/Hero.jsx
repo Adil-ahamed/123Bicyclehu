@@ -98,7 +98,7 @@ function Hero() {
                 component={motion.div}
                 variants={staggerContainer}
               >
-                {/* 📞 Contact Us -> Telephone link */}
+                {/*  Contact Us -> Telephone link */}
                 <motion.a
                   href="tel:+917994664789"
                   className="btn-contact"

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import {
   Box,
@@ -55,31 +56,32 @@ function Footer() {
                     style={{ color: "black" }}
                   />
                 </IconButton>
-                <IconButton sx={{ width: 40 }} className="social-links">
-                  <Icon
-                    icon="fa7-brands:x-twitter"
-                    style={{ color: "black" }}
-                  />
+                <IconButton
+                  href="https://wa.me/917994664789"
+                  sx={{ width: 40 }}
+                  className="social-links"
+                >
+                  <Icon icon="fa7-brands:whatsapp" style={{ color: "black" }} />
                 </IconButton>
                 <IconButton sx={{ width: 40 }} className="social-links">
                   <Icon
-                    icon="fa7-brands:facebook-f"
+                   href="123bicyclehub@gmail.com"
+                    icon="material-symbols:alternate-email-rounded"
                     style={{ color: "black" }}
                   />
                 </IconButton>
               </Stack>
             </Grid>
-            <Grid size={{ xs: 12 }} my={3} textAlign='center'>
+            <Grid size={{ xs: 12 }} my={3} textAlign="center">
               <Typography
                 className="logo-txt"
-                 fontSize={{ xs: 26, sm: 38, md:76,lg: 96}}
+                fontSize={{ xs: 26, sm: 38, md: 76, lg: 96 }}
                 variant="h4"
-
               >
                 <Typography
-                variant="span"
+                  variant="span"
                   className="logo-txt lime-txt"
-                   fontSize={{ xs: 32, sm: 44, md:90,lg: 116}}
+                  fontSize={{ xs: 32, sm: 44, md: 90, lg: 116 }}
                 >
                   123
                 </Typography>
@@ -90,19 +92,49 @@ function Footer() {
               <Stack
                 direction={{ xs: "column", sm: "column", md: "row" }}
                 gap={3}
-                justifyContent={"center"}
+                justifyContent="center"
               >
-                <Typography className="gray-txt" variant="h6" fontWeight={500}>
+                <Typography
+                  component={Link}
+                  to="/"
+                  className="gray-txt"
+                  variant="h6"
+                  fontWeight={500}
+                  sx={{ cursor: "pointer", textDecoration: "none" }}
+                >
                   Home
                 </Typography>
-                <Typography className="gray-txt" variant="h6" fontWeight={500}>
+
+                <Typography
+                  component={Link}
+                  to="/about-us"
+                  className="gray-txt"
+                  variant="h6"
+                  fontWeight={500}
+                  sx={{ cursor: "pointer", textDecoration: "none" }}
+                >
                   About Us
                 </Typography>
-                <Typography className="gray-txt" variant="h6" fontWeight={500}>
-                  Products
-                </Typography>
-                <Typography className="gray-txt" variant="h6" fontWeight={500}>
+
+                <Typography
+                  component={Link}
+                  to="/services"
+                  className="gray-txt"
+                  variant="h6"
+                  fontWeight={500}
+                  sx={{ cursor: "pointer", textDecoration: "none" }}
+                >
                   Service
+                </Typography>
+                <Typography
+                  component={Link}
+                  to="/contact"
+                  className="gray-txt"
+                  variant="h6"
+                  fontWeight={500}
+                  sx={{ cursor: "pointer", textDecoration: "none" }}
+                >
+                  Contact
                 </Typography>
               </Stack>
             </Grid>
