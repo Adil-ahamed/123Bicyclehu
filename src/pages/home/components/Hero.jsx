@@ -103,7 +103,7 @@ function Hero() {
                   href="tel:+917994664789"
                   className="btn-contact"
                   variants={fadeUp}
-                  whileHover={{ scale: 1 }}
+                  whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   style={{ textDecoration: "none" }}
                 >
@@ -112,8 +112,8 @@ function Hero() {
 
                 {/* 💬 WhatsApp link */}
                 <motion.a
-                  href="https://wa.me/917994664789"
-                  target="_blank"
+                  href="tel:+917994664789"
+                  // target="_blank"
                   rel="noopener noreferrer"
                   className="btn-contact"
                   variants={fadeUp}
@@ -121,7 +121,7 @@ function Hero() {
                   whileTap={{ scale: 0.95 }}
                   style={{ textDecoration: "none" }}
                 >
-                  WhatsApp Us
+                  Book now
                 </motion.a>
 
                 {/* Instagram */}
