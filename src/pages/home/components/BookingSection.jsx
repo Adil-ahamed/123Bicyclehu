@@ -2,6 +2,11 @@ import React from "react";
 import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 
+const fadeUp = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0 },
+};
+
 function BookingSection() {
   return (
     <Box py={{ xs: 2, sm: 3, md: 5 }}>
@@ -71,18 +76,23 @@ function BookingSection() {
 
                 <Grid container spacing={2} alignItems="center">
                   <Grid size={{ xs: 12, sm: 12, md: 5 }}>
-                    <motion.button
+       
+                    <motion.a
+                      href="tel:+917034701667"
+                      // target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-contact"
+                      variants={fadeUp}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       style={{
+                        textDecoration: "none",
                         padding: "1rem 2rem",
                         fontSize: "1.1rem",
-                        cursor: "pointer",
                       }}
-                      className="btn-contact"
                     >
-                      Book Now
-                    </motion.button>
+                      Book now
+                    </motion.a>
                   </Grid>
                   <Grid size={{ xs: 12, sm: 12, md: 6 }}>
                     <Typography variant="h6" fontWeight={300}>

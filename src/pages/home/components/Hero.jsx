@@ -112,7 +112,7 @@ function Hero() {
 
                 {/* 💬 WhatsApp link */}
                 <motion.a
-                  href="tel:+917994664789"
+                  href="tel:+917034701667"
                   // target="_blank"
                   rel="noopener noreferrer"
                   className="btn-contact"
