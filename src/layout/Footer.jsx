@@ -10,6 +10,8 @@ import {
   Typography,
 } from "@mui/material";
 
+import { motion } from "framer-motion";
+
 import { Icon } from "@iconify/react";
 
 function Footer() {
@@ -65,7 +67,7 @@ function Footer() {
                 </IconButton>
                 <IconButton sx={{ width: 40 }} className="social-links">
                   <Icon
-                   href="123bicyclehub@gmail.com"
+                    href="123bicyclehub@gmail.com"
                     icon="material-symbols:alternate-email-rounded"
                     style={{ color: "black" }}
                   />
@@ -126,7 +128,7 @@ function Footer() {
                 >
                   Service
                 </Typography>
-                <Typography
+                {/* <Typography
                   component={Link}
                   to="/contact"
                   className="gray-txt"
@@ -135,7 +137,21 @@ function Footer() {
                   sx={{ cursor: "pointer", textDecoration: "none" }}
                 >
                   Contact
-                </Typography>
+                </Typography> */}
+                <motion.a
+                  href="tel:+917994664789"
+                  className="gray-txt"
+                  style={{ textDecoration: "none" }}
+                >
+                  <Typography
+                    className="gray-txt"
+                    variant="h6"
+                    fontWeight={500}
+                    sx={{ cursor: "pointer", textDecoration: "none" }}
+                  >
+                    Contact Us
+                  </Typography>
+                </motion.a>
               </Stack>
             </Grid>
             <Grid size={{ xs: 12 }} mb={1} textAlign={"center"}>

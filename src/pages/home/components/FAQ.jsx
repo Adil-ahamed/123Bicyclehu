@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import FaqAccordion from "./FaqAccordion";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -17,6 +18,7 @@ const fadeUp = {
 };
 
 function FAQ() {
+  const navigate=useNavigate()
   return (
     <Box py={{ xs: 1, sm: 3, md: 5 }}>
       <Container>
@@ -73,6 +75,7 @@ function FAQ() {
                 Still Got Questions?
               </Typography>
               <button
+                onClick={() => navigate("/contact")}
                 style={{ marginTop: "1.4rem" }}
                 className="btn-contact"
               >

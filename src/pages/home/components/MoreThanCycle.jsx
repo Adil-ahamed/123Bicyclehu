@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 // Animation Variants
 const fadeUp = {
@@ -21,6 +22,7 @@ const staggerContainer = {
 };
 
 function MoreThanCycle() {
+  const navigate=useNavigate()
   return (
     <Box
       py={3}
@@ -83,7 +85,9 @@ function MoreThanCycle() {
                   ride stays smooth and safe whether it’s a quick fix or a full
                   overhaul.
                 </Typography>
-                <button className="btn-contact">Contact Us</button>
+                <button onClick={()=>   navigate("/contact")} className="btn-contact">Contact Us</button>
+                
+                
               </Box>
             </motion.div>
           </Grid>
